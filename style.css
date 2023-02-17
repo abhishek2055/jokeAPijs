@@ -1,0 +1,72 @@
+/* <div class="container">
+<h3>Best jokes to make your day</h3>
+<div class="joke" id="joke">best jokes are loading-......</div>
+<button id="jokeBtn" class="btn">NEXT JOKE</button>
+</div> */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    background-color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: bisque;
+   min-height: 10rem;
+    width: 70%;
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 10px;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 3px 6px 222px 4px white;
+}
+.joke{
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(2, 23, 41);
+}
+.btn{
+    font-size: 0.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    padding: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+   
+}
+
+.btn:hover {
+        animation: color_change 5s ease-in-out infinite;
+
+}
+  
+  @keyframes color_change {
+    0% {
+      color: green;
+    }
+    50% {
+      color: yellow;
+    }
+    100% {
+      color: blueviolet;
+    }
+  }
+
+
+
+
+h3{
+    font-style: italic;
+    font-size: large;
+}
